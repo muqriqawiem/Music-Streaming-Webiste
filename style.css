@@ -20,7 +20,7 @@ body{
 
 img{
     width: 100%;
-    max-height: 250px;
+    min-height: 250px;
 }
 .main{
     padding: 40px 0;
@@ -33,8 +33,8 @@ img{
     display: block;
     border-radius: 7px;
     overflow: hidden;
-    box-shadow: 0 10px 30px #0d1620;
-    transition: all ease 0.4s;
+    box-shadow: 0 10px 15px #0d1620;
+    transition: all ease 0.5s;
     max-height: 250px;
 }
 .album-poster:hover{
@@ -44,36 +44,36 @@ img{
 h3{
     font-size: 34px;
     margin-bottom: 34px;
-    border-bottom: 4px solid #f7f7f7;
+    /*border-bottom: 4px solid #f7f7f7;*/
     padding-bottom: 15px;
 }
 p{
-    font-size: 20px;
-    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    font-family: Lucida Console;
 }
 h4{
     font-size: 20px;
     text-transform: uppercase;
     margin-top: 15px;
     font-weight: 700;
-    font-family: "Montserrat", sans-serif;
+    font-family: Segoe Script;
 }
 
 /*default is hide music player*/
 #aplayer{
     position: fixed;
-    bottom: -100%;
+    bottom: -150%;
     left: 0;
     width: 100%;
     margin: 0;
     box-shadow: 0 -2px 2px #dadada;
-    background-color: #fff;
+    background-color: #f7f7f7;
     transition: all ease 0.5s;
+    font-family: Lucida Sans;
 }
 #aplayer.showPlayer{
     bottom: 0;
 }
-
 
 /*MUSIC PLAYER CUSTOMIZING STYLE*/
 span{
@@ -81,8 +81,8 @@ span{
     font-size: 16px;
 }
 .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded{
-    background: #e0e0e0;
-    height: 4px;
+    background: #d3d3d3;
+    height: 3px;
 }
 .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played{
     height: 4px;
@@ -93,8 +93,8 @@ span{
 }
 
 .aplayer .aplayer-icon{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
 }
 .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path {
     fill: #000;
@@ -104,6 +104,8 @@ span{
 }
 
 .title{
-    float: left;
+    position: center;
     color: #f7f7f7;
+    font-family: 'Monoton', cursive;
+    font-size: 50px;
 }
